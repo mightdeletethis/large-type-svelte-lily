@@ -2,9 +2,9 @@
   import QRModal from "./components/QRModal.svelte";
   import BarcodeModal from "./components/BarcodeModal.svelte";
 
-  const WELCOME_MSG = "*hello!";
+  const WELCOME_MSG = "Lily Oliveira";
 
-  let inputText = "*hello!";
+  let inputText = WELCOME_MSG;
   let inputRef;
   $: text = inputText || " ";
   $: charboxFontSize = Math.min(150 / text.length, 30);
@@ -88,10 +88,10 @@
       <span class="button-row">
         <a
           href=""
-          on:click|preventDefault={() => updateText("+49 150 0000 0000")}
+          on:click|preventDefault={() => updateText("+49 152 4444 32")}
           >Phone</a
         >
-        <a href="" on:click|preventDefault={() => updateText("Your Name Here")}
+        <a href="" on:click|preventDefault={() => updateText("Lily Oliveira")}
           >Name</a
         >
         <a
